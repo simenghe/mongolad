@@ -8,7 +8,7 @@ export const resolvers = {
     Mutation: {
         createCat: async (_, { name }) => {
             const kitty = new Cat({ name });
-            console.log("we can save over here.")
+            console.log("we can save over here.");
             await kitty.save();
             return kitty;
         }

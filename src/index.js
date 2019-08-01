@@ -10,7 +10,6 @@ const url = `mongodb+srv://simenghe:2000@mongolad-shrff.mongodb.net/test?retryWr
 mongoose.connect(url, { useNewUrlParser: true });
 const startServer = async () => {
     const app = express();
-
     const server = new ApolloServer({
         // These will be defined for both new or existing servers
         typeDefs,
@@ -26,12 +25,3 @@ const startServer = async () => {
     )
 };
 startServer();
-
-// import mongoose from 'mongoose'
-// mongoose.connect('mongodb://localhost:27017/test', { useNewUrlParser: true });
-
-// const Cat = mongoose.model('Cat', { name: String });
-
-// const kitty = new Cat({ name: 'Zildjian' });
-// kitty.save().then(() => console.log('meow'));
-
