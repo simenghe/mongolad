@@ -9,7 +9,7 @@ const url = `mongodb+srv://simenghe:2000@mongolad-shrff.mongodb.net/test?retryWr
 
 mongoose.connect(url, { useNewUrlParser: true });
 const startServer = async () => {
-    const app = express();
+    const app = express('ratnu');
     const server = new ApolloServer({
         // These will be defined for both new or existing servers
         typeDefs,
