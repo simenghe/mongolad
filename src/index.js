@@ -4,8 +4,8 @@ import express from 'express';
 import mongoose from 'mongoose';
 import { typeDefs } from './typeDefs';
 import { resolvers } from './resolvers';
+import { url } from './url'
 
-const url = `mongodb+srv://simenghe:2000@mongolad-shrff.mongodb.net/test?retryWrites=true&w=majority`
 
 mongoose.connect(url, { useNewUrlParser: true });
 const startServer = async () => {
